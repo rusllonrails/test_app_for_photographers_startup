@@ -7,4 +7,12 @@ class Customer < ActiveRecord::Base
       with: /\A\(?[0-9]{3}\)?-[0-9]{3}-[0-9]{4}\z/,
       message: 'must be in xxx-xxx-xxxx format.'
     }
+
+  after_create :send_confirmation
+
+  private
+
+  def send_confirmation
+    CustomerMailer.notify(self).deliver!
+  end
 end
