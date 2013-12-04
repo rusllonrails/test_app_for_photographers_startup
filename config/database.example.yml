@@ -1,0 +1,19 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: myphotopa_dev
+  user: myphotopa
+  password: myphotopa_pass
+  pool: 5
+  timeout: 5000
+
+test: &test
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: myphotopa_test
+  user: myphotopa
+  password: myphotopa_pass
+  pool: 5
+  timeout: 5000
