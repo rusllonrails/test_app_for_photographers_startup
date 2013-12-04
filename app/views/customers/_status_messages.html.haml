@@ -1,0 +1,12 @@
+- if @customer.errors.any?
+  .alert.alert-danger
+    %strong Oh errors!
+
+    %ul
+      - @customer.errors.full_messages.each do |error|
+        %li
+          = error
+- else
+  .alert.alert-success
+    %strong Well done!
+    Message sent successfuly.
