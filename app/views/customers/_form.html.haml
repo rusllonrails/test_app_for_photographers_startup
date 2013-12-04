@@ -1,9 +1,16 @@
 = form_for Customer.new, html: { class: 'form-signin new_customer' }, remote: true do |f|
+  %span.pull-right.required *
   = f.text_field :first_name, class: 'form-control', autofocus: '', placeholder: 'First name'
+  %span.pull-right.required *
   = f.text_field :last_name, class: 'form-control', placeholder: 'Last name'
+  %span.pull-right.required *  
   = f.email_field :email, class: 'form-control', placeholder: 'Email'    
+  %span.pull-right.required *  
   = f.text_field :phone, class: 'form-control phone_number', placeholder: 'Phone'
   = f.text_area :comment, class: 'form-control', placeholder: 'Your comment here ...'
+
+  %p.required_message
+    * fields required
 
   .form_actions
     = f.submit 'Send message', class: 'btn btn-lg btn-primary btn-block'

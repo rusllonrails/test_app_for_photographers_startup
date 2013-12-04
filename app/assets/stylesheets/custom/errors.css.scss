@@ -3,7 +3,9 @@
     padding-left: 0px;
 
     li {
-      font-size: 18px
+      overflow: hidden; 
+      height: 30px;
+      font-size: 16px
     }
   }
 }
@@ -11,4 +13,20 @@
 .form_actions {
   overflow: hidden;
   margin-top: 20px;
+}
+
+span.required {
+  margin-right: -20px; 
+  font-weight: bold; 
+  color: red; 
+  padding-top: 8px; 
+  padding-bottom: 0px; 
+  height: 35px;
+}
+
+.required_message {
+  margin-top: 10px; 
+  text-align: left; 
+  color: red; 
+  font-size: 14px;
 }
