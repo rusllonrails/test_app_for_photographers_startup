@@ -11,9 +11,6 @@ gem 'jquery-ui-rails'
 gem 'haml-rails'
 gem "less-rails"
 
-# Phone Validation
-gem 'phony_rails'
-
 # Images
 gem 'carrierwave'
 gem 'rmagick', require: false
