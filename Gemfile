@@ -29,6 +29,8 @@ gem 'faker'
 
 gem 'kaminari'
 gem 'heroku'
+gem 'unicorn'
+gem 'foreman'
 
 group :development do
   gem 'mysql2'
