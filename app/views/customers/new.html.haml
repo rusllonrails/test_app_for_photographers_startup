@@ -4,3 +4,6 @@
     Please, let us some information about you
 
   = render 'customers/form'
+  
+= content_for(:javascript_code) do
+  CustomerForm.init();  

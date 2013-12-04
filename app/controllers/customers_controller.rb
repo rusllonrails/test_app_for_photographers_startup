@@ -6,6 +6,7 @@ class CustomersController < ApplicationController
   def create
     @customer = Customer.new(customer_params)
     @customer.save
+    sleep 3
   end
 
   private
