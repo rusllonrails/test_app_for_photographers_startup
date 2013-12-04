@@ -9,10 +9,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'haml-rails'
-
-# Twitter Bootstrap
 gem "less-rails"
-gem "twitter-bootstrap-rails"
 
 # Images
 gem 'carrierwave'

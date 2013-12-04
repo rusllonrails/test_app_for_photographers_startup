@@ -16,7 +16,7 @@ class CustomersController < ApplicationController
       :last_name,
       :email,
       :comment,
-      :sex
+      :sex,
       :phone
     )
   end
