@@ -2,9 +2,10 @@
   = f.text_field :first_name, class: 'form-control', autofocus: '', placeholder: 'First name'
   = f.text_field :last_name, class: 'form-control', placeholder: 'Last name'
   = f.email_field :email, class: 'form-control', placeholder: 'Email'    
-  = f.text_field :phone, class: 'form-control', placeholder: 'Phone'
+  = f.text_field :phone, class: 'form-control phone_number', placeholder: 'Phone'
   = f.text_area :comment, class: 'form-control', placeholder: 'Your comment here ...'
 
-  = f.submit 'Send message', class: 'btn btn-lg btn-primary btn-block'
-  .loading_spinner.hidden
-    = image_tag 'loading.gif'
+  .form_actions
+    = f.submit 'Send message', class: 'btn btn-lg btn-primary btn-block'
+    .loading_spinner.hidden
+      = image_tag 'loading.gif'
