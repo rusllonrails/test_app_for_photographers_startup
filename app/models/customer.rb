@@ -10,6 +10,10 @@ class Customer < ActiveRecord::Base
 
   after_create :send_confirmation
 
+  def full_name
+    [ first_name, last_name ].join(' ')
+  end
+
   private
 
   def send_confirmation
